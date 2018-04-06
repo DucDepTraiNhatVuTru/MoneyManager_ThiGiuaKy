@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="100dp"
+        android:background="#ffffff"
+        android:importantForAutofill="auto"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0 VNĐ"
+            android:textSize="35dp"
+            android:id="@+id/edtAmount"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:layout_weight="2"
+                android:id="@+id/rdbThu"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chi"
+                android:layout_weight="2"
+                android:checked="true"
+                android:id="@+id/rdbChi"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Content"
+                android:id="@+id/edtContent"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note"
+            android:id="@+id/edtNote"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chọn ngày"
+            android:id="@+id/edtDate"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:layout_gravity="right"
+            android:id="@+id/btnLuu"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
